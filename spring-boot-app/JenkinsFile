@@ -30,7 +30,7 @@ pipeline {
         }
       }
     }
-  //check
+  
     stage('Build and Push Docker Image') {
       environment {
         DOCKER_IMAGE = "mominaa/ultimate-cicd:${BUILD_NUMBER}"
